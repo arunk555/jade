@@ -1,0 +1,17 @@
+doctype html 
+html 
+ head 
+  title  Jade has been renamed
+body 
+  h1 Arun Test 
+  case option
+   when "students"
+    ol 
+     each student in Students
+      li= student 
+   when "teachers"
+    ol 
+      each teacher in Teachers
+       li= teacher
+   default
+    p Not found!
